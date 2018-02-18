@@ -1,8 +1,7 @@
-FROM ubuntu
+FROM ubuntu:latest
 
-ADD Blob /var/www/html/
+RUN apt-get update
 
-CMD apachectl -D FOREGROUND
 
 
 
